@@ -1,0 +1,138 @@
+export interface Vehicle {
+  id: string;
+  name: string;
+  nameHi: string;
+  type: 'sedan' | 'muv' | 'group' | 'luxury';
+  typeLabel: string;
+  typeLabelHi: string;
+  seats: number;
+  pricePerKm: number;
+  image: string;
+  features: string[];
+  featuresHi: string[];
+  bestFor: string;
+  bestForHi: string;
+}
+
+export const fleet: Vehicle[] = [
+  {
+    id: 'tt16',
+    name: 'Tempo Traveller 16 Seater',
+    nameHi: 'टेम्पो ट्रैवलर 16 सीटर',
+    type: 'group',
+    typeLabel: 'Group Vehicle',
+    typeLabelHi: 'ग्रुप वाहन',
+    seats: 16,
+    pricePerKm: 24,
+    image: '/images_new/tempo-traveller/16seater/WhatsApp_Image_2026-03-19_at_11.48.22.jpeg',
+    features: ['AC', 'Push-back seats', 'Music system', 'Ample luggage space'],
+    featuresHi: ['AC', 'पुश-बैक सीटें', 'म्यूजिक सिस्टम', 'पर्याप्त सामान स्थान'],
+    bestFor: 'Group tours, pilgrimages, weddings',
+    bestForHi: 'ग्रुप टूर, तीर्थयात्रा, शादियाँ',
+  },
+  {
+    id: 'tt20',
+    name: 'Tempo Traveller 21 Seater',
+    nameHi: 'टेम्पो ट्रैवलर 21 सीटर',
+    type: 'group',
+    typeLabel: 'Group Vehicle',
+    typeLabelHi: 'ग्रुप वाहन',
+    seats: 20,
+    pricePerKm: 26,
+    image: '/images_new/tempo-traveller/21seater/WhatsApp_Image_2026-03-19_at_11.49.51.jpeg',
+    features: ['AC', 'Push-back seats', 'Music system', 'Spacious cabin'],
+    featuresHi: ['AC', 'पुश-बैक सीटें', 'म्यूजिक सिस्टम', 'विशाल केबिन'],
+    bestFor: 'Large groups, corporate outings, events',
+    bestForHi: 'बड़े समूह, कॉर्पोरेट आउटिंग, इवेंट्स',
+  },
+  {
+    id: 'tt26',
+    name: 'Tempo Traveller 26 Seater',
+    nameHi: 'टेम्पो ट्रैवलर 26 सीटर',
+    type: 'group',
+    typeLabel: 'Group Vehicle',
+    typeLabelHi: 'ग्रुप वाहन',
+    seats: 26,
+    pricePerKm: 31,
+    image: '/images_new/tempo-traveller/26seater/WhatsApp_Image_2026-03-19_at_11.50.49.jpeg',
+    features: ['AC', 'Reclining seats', 'Entertainment system', 'Maximum capacity'],
+    featuresHi: ['AC', 'रिक्लाइनिंग सीटें', 'एंटरटेनमेंट सिस्टम', 'अधिकतम क्षमता'],
+    bestFor: 'Extra-large groups, pilgrimages, school trips',
+    bestForHi: 'बहुत बड़े समूह, तीर्थयात्रा, स्कूल ट्रिप',
+  },
+  {
+    id: 'urbania',
+    name: 'Force Urbania 16 Seater',
+    nameHi: 'फोर्स अर्बेनिया 16 सीटर',
+    type: 'luxury',
+    typeLabel: 'Luxury Group Vehicle',
+    typeLabelHi: 'लक्ज़री ग्रुप वाहन',
+    seats: 16,
+    pricePerKm: 30,
+    image: '/guruj-cab-images/fleet/force-urbania.avif',
+    features: ['AC', 'Luxury recliners', 'Premium interiors', 'USB charging'],
+    featuresHi: ['AC', 'लक्ज़री रिक्लाइनर', 'प्रीमियम इंटीरियर', 'USB चार्जिंग'],
+    bestFor: 'Premium group travel, corporate events, VIP transport',
+    bestForHi: 'प्रीमियम ग्रुप यात्रा, कॉर्पोरेट इवेंट, VIP ट्रांसपोर्ट',
+  },
+  {
+    id: 'dzire',
+    name: 'Swift Dzire',
+    nameHi: 'स्विफ्ट डिज़ायर',
+    type: 'sedan',
+    typeLabel: 'Sedan',
+    typeLabelHi: 'सेडान',
+    seats: 4,
+    pricePerKm: 11,
+    image: '/guruj-cab-images/fleet/dzire.webp',
+    features: ['AC', 'Comfortable seats', 'Boot space', 'Fuel efficient'],
+    featuresHi: ['AC', 'आरामदायक सीटें', 'बूट स्पेस', 'ईंधन कुशल'],
+    bestFor: 'Solo travelers, couples, small families',
+    bestForHi: 'अकेले यात्री, जोड़े, छोटे परिवार',
+  },
+  {
+    id: 'ertiga',
+    name: 'Maruti Ertiga',
+    nameHi: 'मारुति अर्टिगा',
+    type: 'muv',
+    typeLabel: 'MUV',
+    typeLabelHi: 'MUV',
+    seats: 6,
+    pricePerKm: 14,
+    image: '/guruj-cab-images/fleet/ertiga.jpg',
+    features: ['AC', 'Spacious', '3-row seating', 'Good luggage space'],
+    featuresHi: ['AC', 'विशाल', '3-पंक्ति सीटिंग', 'अच्छा सामान स्थान'],
+    bestFor: 'Families, small groups',
+    bestForHi: 'परिवार, छोटे समूह',
+  },
+  {
+    id: 'carens',
+    name: 'Kia Carens',
+    nameHi: 'किआ कैरेंस',
+    type: 'muv',
+    typeLabel: 'Premium MPV',
+    typeLabelHi: 'प्रीमियम MPV',
+    seats: 6,
+    pricePerKm: 15,
+    image: '/guruj-cab-images/fleet/kia-carens.cms',
+    features: ['AC', 'Premium interiors', 'Ventilated seats', 'Sunroof'],
+    featuresHi: ['AC', 'प्रीमियम इंटीरियर', 'वेंटिलेटेड सीटें', 'सनरूफ'],
+    bestFor: 'Comfort-seeking families, business travel',
+    bestForHi: 'आराम चाहने वाले परिवार, व्यावसायिक यात्रा',
+  },
+  {
+    id: 'innova',
+    name: 'Toyota Innova Crysta',
+    nameHi: 'टोयोटा इनोवा क्रिस्टा',
+    type: 'muv',
+    typeLabel: 'Luxury MPV',
+    typeLabelHi: 'लक्ज़री MPV',
+    seats: 7,
+    pricePerKm: 18,
+    image: '/guruj-cab-images/fleet/innvoa-crysta.jpg',
+    features: ['AC', 'Captain seats', 'Premium comfort', 'Ample boot space'],
+    featuresHi: ['AC', 'कैप्टन सीटें', 'प्रीमियम आराम', 'पर्याप्त बूट स्पेस'],
+    bestFor: 'Premium travel, outstation trips, VIP transport',
+    bestForHi: 'प्रीमियम यात्रा, आउटस्टेशन ट्रिप, VIP ट्रांसपोर्ट',
+  },
+];
