@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Guruji Tour &amp; Travels</title>
+    <script>
+      // Single Page App fallback for GitHub Pages.
+      // Rewrites the requested path into a query string and redirects to the
+      // root index.html, where a matching snippet restores the real URL.
+      (function () {
+        var l = window.location;
+        var path = l.pathname.slice(1);
+        var redirect =
+          l.protocol +
+          '//' +
+          l.host +
+          '/?/' +
+          path.replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+        l.replace(redirect);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
